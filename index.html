@@ -82,14 +82,16 @@
 
     <!-- Hero Section Start -->
     <section class="hero" id="home">
-      <main class="content" data-aos="fade-up-right" data-aos-duration="2000">
-        <h1>Mari Nikmati Secangkir <span>Kopi</span></h1>
-        <p>
-          “Hidup dapat diibaratkan seperti secangkir kopi hitam. Dimana rasa
-          manis dan pahit akan bertemu di dalam sebuah kehangatan.”
-        </p>
-        <a href="#" class="cta">Beli Sekarang</a>
-      </main>
+      <div class="mask-container">
+        <main class="content" data-aos="fade-up-right" data-aos-duration="2000">
+          <h1>Mari Nikmati Secangkir <span>Kopi</span></h1>
+          <p>
+            “Hidup dapat diibaratkan seperti secangkir kopi hitam. Dimana rasa
+            manis dan pahit akan bertemu di dalam sebuah kehangatan.”
+          </p>
+          <!-- <a href="#" class="cta">Beli Sekarang</a> -->
+        </main>
+      </div>
     </section>
 
     <!-- Hero Section End -->
@@ -414,8 +416,18 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
 
     <script>
-      gsap.from('.navbar',{duration: 1, y:-100,opacity: 0,ease: 'bounce'});
-      gsap.from('.navbar-logo',{duration: 1, delay: 0.5, rotateY: 360, opacity: 0});
+      gsap.from(".navbar", {
+        duration: 1,
+        y: -100,
+        opacity: 0,
+        ease: "bounce",
+      });
+      gsap.from(".navbar-logo", {
+        duration: 1,
+        delay: 0.5,
+        rotateY: 360,
+        opacity: 0,
+      });
     </script>
 
     <!-- My Java Script -->

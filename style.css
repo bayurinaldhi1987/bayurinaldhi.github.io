@@ -180,7 +180,7 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
-    -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
+    /* -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0)); */
     mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
 } 
 
@@ -222,6 +222,16 @@ body {
 
 .hero .content h1 span {
     color: var(--primary);
+}
+
+.hero .mask-container {
+    position: absolute;
+    /* background: salmon; */
+    inset: 0;
+    -webkit-mask-image: url('img/header-bg.svg');
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    -webkit-mask-position: center;
 }
 
 .hero .content p {
